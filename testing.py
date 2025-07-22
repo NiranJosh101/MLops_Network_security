@@ -7,7 +7,7 @@ import os
 # Load .env variables
 load_dotenv()
 
-MONGODB_DB_URL = "mongodb+srv://niranjosh011:Admin100001@cluster0.tfxcqvh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MONGODB_DB_URL = ''
 
 client = pymongo.MongoClient(MONGODB_DB_URL)
 db = client["NETWORKAI"]

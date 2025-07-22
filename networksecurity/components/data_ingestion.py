@@ -41,7 +41,7 @@ class DataIngestion:
             database_name=self.data_ingestion_config.database_name
             collection_name=self.data_ingestion_config.collection_name
 
-            # Connct with the remote mongodb via pymongo
+            # Connect with the remote mongodb via pymongo
             self.mongo_client=pymongo.MongoClient(MONGODB_DB_URL)
 
             # Read the collection in a particular database
