@@ -17,7 +17,7 @@ from networksecurity.constant.training_pipeline import DATA_INGESTION_COLLECTION
 
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI, File, UploadFile,Request
-from uvicorn import run as app_run
+from uvicorn import run as app_run # let me run the app.py directly
 from fastapi.responses import Response
 from starlette.responses import RedirectResponse
 import pandas as pd
