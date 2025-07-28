@@ -29,6 +29,13 @@ from sklearn.ensemble import (
 
 import mlflow
 from mlflow.models.signature import infer_signature
+# import dagshub
+# dagshub.init(repo_owner='NiranJosh101', repo_name='MLops_Network_security', mlflow=True)
+
+# import mlflow
+# with mlflow.start_run():
+#   mlflow.log_param('parameter name', 'value')
+#   mlflow.log_metric('metric name', 1)
 
 
 
@@ -146,8 +153,11 @@ class ModelTrainer:
         os.makedirs(model_dir_path,exist_ok=True) 
 
         ## store best model and preprocessor logic for later infers
-        Network_Model=NetworkModel(preprocessor=preprocessor,model=best_model)
-        save_object(self.model_trainer_config.trained_model_file_path,obj=Network_Model)
+        Network_Model=NetworkModel(preprocessor=preprocessor, model=best_model)
+        save_object(self.model_trainer_config.trained_model_file_path, obj=Network_Model)
+        
+        #model pusher
+        save_object("final_model/model.pkl",best_model)
 
         ## Model Trainer Artifact
         model_trainer_artifact=ModelTrainerArtifact(trained_model_file_path=self.model_trainer_config.trained_model_file_path,
@@ -172,7 +182,7 @@ class ModelTrainer:
                 train_arr[:, -1],
                 test_arr[:, :-1],
                 test_arr[:, -1],
-            )
+            ) 
 
             model_trainer_artifact=self.train_model(x_train,y_train,x_test,y_test)
             return model_trainer_artifact
