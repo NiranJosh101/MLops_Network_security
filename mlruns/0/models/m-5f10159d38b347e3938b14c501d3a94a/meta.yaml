@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/USER/Desktop/MLops_Network_security/mlruns/0/models/m-5f10159d38b347e3938b14c501d3a94a/artifacts
+creation_timestamp: 1753831454876
+experiment_id: '0'
+last_updated_timestamp: 1753831483408
+model_id: m-5f10159d38b347e3938b14c501d3a94a
+model_type: null
+name: model
+source_run_id: 316bf251471141ccb5fd6070a60d0893
+status: 2
+status_message: null

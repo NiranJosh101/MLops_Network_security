@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/USER/Desktop/MLops_Network_security/mlruns/0/08275e6c99c4437a907b1780d0f4d8a5/artifacts
+end_time: 1753831494772
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 08275e6c99c4437a907b1780d0f4d8a5
+run_name: unequaled-quail-22
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753831483667
+status: 3
+tags: []
+user_id: USER

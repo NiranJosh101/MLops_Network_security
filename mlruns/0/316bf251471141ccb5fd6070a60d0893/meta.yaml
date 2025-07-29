@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/USER/Desktop/MLops_Network_security/mlruns/0/316bf251471141ccb5fd6070a60d0893/artifacts
+end_time: 1753831483444
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 316bf251471141ccb5fd6070a60d0893
+run_name: bedecked-smelt-307
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1753831453810
+status: 3
+tags: []
+user_id: USER

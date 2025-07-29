@@ -21,7 +21,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Get mongodb connection link
-MONGODB_DB_URL="mongodb+srv://niranjosh011:Admin100001@cluster0.tfxcqvh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MONGODB_DB_URL=os.getenv("MONGO_DB_URL")
 
 
 class DataIngestion:
