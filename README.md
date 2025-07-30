@@ -106,7 +106,7 @@ docker run -p 8000:8000 network-threat-detector
 
 ### ☁️ AWS EC2 + ECR Setup (Deployment)
 
-> Full walkthrough is covered in the [blog post](#) — here’s a high-level summary:
+> Full walkthrough is covered in the [blog post](https://medium.com/@niranjosh011/going-beyond-local-mlops-in-the-cloud-9ec7db023423) — here’s a high-level summary:
 
 1. Build and push the image to AWS ECR
 2. Pull and run the container on your EC2 instance
